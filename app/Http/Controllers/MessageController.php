@@ -10,7 +10,13 @@ class MessageController extends Controller
     public function index()
     {
         return view('welcome', [
-            'messages' => Message::paginate(5)
+            'messages' => Message::latest()->paginate(5)
+        ]);
+    }
+    public function indexAdmin()
+    {
+        return view('dashboard', [
+            'messages' => Message::latest()->paginate(10)
         ]);
     }
 
@@ -36,5 +42,19 @@ class MessageController extends Controller
         Message::create($attr);
 
         return redirect('/')->with('sucess', 'Your message has been left!');
+    }
+
+
+    public function editAdmin(Message $message)
+    {
+        return view('messages.edit', ['message' => $message]);
+    }
+
+
+    public function destroy(Message $message)
+    {
+        $message->delete();
+
+        return back()->with('success', 'Post Deleted');
     }
 }

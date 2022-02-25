@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\MessageController;
 use Illuminate\Support\Facades\Route;
-
+use Symfony\Component\Mime\MessageConverter;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,15 +16,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+
+
 
 
 Route::get('/', [MessageController::class, 'index']);
 Route::get('/messages/{message:id}', [MessageController::class, 'show']);
 Route::get('/create', [MessageController::class, 'create']);
 Route::post('/', [MessageController::class, 'store']);
+Route::get('/dashboard', [MessageController::class, 'indexAdmin'])->middleware(['auth'])->name('dashboard');
+Route::get('/dashboard/message/{message:id}/edit', [MessageController::class, 'editAdmin'])->middleware(['auth'])->name('adminEdit');
+Route::get('/dashboard/message/{message:id}/edit', [MessageController::class, 'editAdmin'])->middleware(['auth'])->name('adminEdit');
 
 
 require __DIR__ . '/auth.php';
