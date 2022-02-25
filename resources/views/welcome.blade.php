@@ -14,6 +14,7 @@
                 <h3 class="font-bold ">{{ucwords($message->title)}}</h3>
                 <p>{{Str::limit($message->message, 100)}}</p>
                 <p class="text-xs text-blue-400">{{ $message->created_at->diffForHumans() }}</p>
+
             </div>
         </a>
         @endforeach
