@@ -3,19 +3,22 @@
 
 <head>
     <script src="https://kit.fontawesome.com/c5a3b5b538.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>Coastal Stay Messages</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
-    <!-- Styles -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Sedgwick+Ave&display=swap" rel="stylesheet"> <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+
 
     <style>
 
@@ -27,7 +30,7 @@
 <body class="antialised bg-blue-200">
 
     <!--Nav-->
-    <div class="w-full shadow-sm bg-blue-200">
+    <div class="w-full shadow-sm bg-blue-200 container mx-auto">
         <div class="w-full flex items-center justify-between">
             <a class="flex items-center text-indigo-400 no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="/">
                 <img src="https://www.coastalstay.co.uk/coastal-stay-logo-white-min.png" width="100" height="200" class="rounded max-w-sm" style="background-color: ; height: 75px;" alt="">

@@ -2,3 +2,17 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 /* @import "node_modules/font-awesome/scss/font-awesome.scss"; */
+
+
+body, * {
+    font-family: 'Sedgwick Ave', cursive;
+
+}
+
+p {
+    letter-spacing: 1px;
+}
+
+h1, h2, h3, h4, h5 {
+    letter-spacing: 1.5px;
+}

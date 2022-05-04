@@ -10,7 +10,7 @@ class MessageController extends Controller
     public function index()
     {
         return view('welcome', [
-            'messages' => Message::latest()->paginate(5)
+            'messages' => Message::latest()->paginate(6)
         ]);
     }
     public function indexAdmin()

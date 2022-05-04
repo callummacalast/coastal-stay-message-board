@@ -39,7 +39,7 @@
                                             <a href="/dashboard/message/{{ $message->id }}/edit" class="text-indigo-600 hover:text-indigo-900">Edit</a>
                                         </td>
                                         <td class="px-6 py-4 whitespace-wrap text-right text-sm font-medium">
-                                            <a href="#" class="text-red-600 hover:text-indigo-900">Delete</a>
+                                            <a href="/dashboard/message/{{ $message->id }}/delete" class="text-red-600 hover:text-indigo-900">Delete</a>
                                         </td>
                                     </tr>
                                     @endforeach
