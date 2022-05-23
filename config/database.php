@@ -1,5 +1,5 @@
 <?php
-$DATABASE_URL = parse_url('mysql://b01afa1e080637:c22a1c89@us-cdbr-east-05.cleardb.net/heroku_5c54f95a90c7670?reconnect=true');
+$CLEARDB_DATABASE_URL = parse_url('mysql://b01afa1e080637:c22a1c89@us-cdbr-east-05.cleardb.net/heroku_5c54f95a90c7670?reconnect=true');
 
 use Illuminate\Support\Str;
 
