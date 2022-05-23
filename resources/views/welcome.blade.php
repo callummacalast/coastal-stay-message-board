@@ -14,10 +14,10 @@
         <div class="container mx-auto">
             <h1 class="text-center text-lead font-semibold text-xl mt-3 mb-3">Messages</h1>
 
-            <div class="flex flex-wrap -mx-4 sm:p-3">
+            <div class="flex flex-wrap mx-4 sm:p-3">
                 @foreach ($messages as $message)
 
-                <div class="w-full md:w-1/2 xl:w-1/3 sm:w-75 sm:m-auto px-4">
+                <div class="w-full md:w-1/2 xl:w-1/3 px-4">
                     <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-10 hover:bg-gray-100">
 
                         <div class="p-8 sm:p-9 md:p-7 xl:p-9 text-center">
