@@ -1,4 +1,5 @@
 <?php
+$DATABASE_URL = parse_url('mysql://b01afa1e080637:c22a1c89@us-cdbr-east-05.cleardb.net/heroku_5c54f95a90c7670?reconnect=true');
 
 use Illuminate\Support\Str;
 
@@ -123,7 +124,7 @@ return [
 
         'options' => [
             'cluster' => env('REDIS_CLUSTER', 'redis'),
-            'prefix' => env('REDIS_PREFIX', Str::slug(env('APP_NAME', 'laravel'), '_').'_database_'),
+            'prefix' => env('REDIS_PREFIX', Str::slug(env('APP_NAME', 'laravel'), '_') . '_database_'),
         ],
 
         'default' => [
