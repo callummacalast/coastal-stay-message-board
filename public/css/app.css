@@ -1518,6 +1518,10 @@ h1, h2, h3, h4, h5 {
 }
 @media (min-width: 640px) {
 
+  .sm\:m-auto {
+    margin: auto;
+  }
+
   .sm\:-my-px {
     margin-top: -1px;
     margin-bottom: -1px;
